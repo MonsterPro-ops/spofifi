@@ -1,77 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="Music.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify-like Sidebar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <nav>
-            <h3>Music</h3>
-        </nav>
-    </header>
-    
-    <div class="play-song">
-        <li class="song-item">
-            <span>01</span>
-            <img src="anh/đừng làm trái tim anh đau.jpeg" alt="">
-            <h5>Đừng làm trái tim anh đau
-                <div class="subtitle">Sơn Tùng M-TP</div>
-            </h5>
-            <i class="fa-solid playlistPlay fa-play" id="1"></i>
-        </li>
-        <li class="song-item">
-            <span>01</span>
-            <img src="anh/nước mắt cá sấu.jpeg" alt="">
-            <h5>
-                Nước mắt cá sấu
-                <div class="subtitle">HIEUTHUHAI</div>
-            </h5>
-            <i class="fa-solid playlistPlay fa-play" id="1"></i>
-        </li>
+<body class="bg-gray-900">
+  <div class="h-screen w-20 bg-black flex flex-col items-center py-4 space-y-4">
+    <div class="text-white text-2xl font-bold">🎵</div>
+    <button class="w-10 h-10 flex items-center justify-center bg-gray-800 rounded hover:bg-gray-700 text-white text-2xl">
+      +
+    </button>
+    <div class="flex flex-col items-center space-y-4 mt-4">
 
-        <li class="song-item">
-            <span>01</span>
-            <img src="anh/dữ liệu quý.jpg" alt="">
-            <h5>Dữ liệu quý
-                <div class="subtitle">Dương Domic</div>
-            </h5>
-            <i class="fa-solid playlistPlay fa-play" id="1"></i>
-        </li>
-        
-        <div class="content">
-            <h1>Sơn Tùng M-TP</h1>
-            <p>Dừng làm trái tim anh đau</p>
-          
-            <footer>
-              <div class="music_bar">
-                <span id="current-start">0:00</span>
-                <div class="bar">
-                  <input type="range" id="seek" min="0" max="100">
-                  <div class="bar2" id="bar2"></div>
-                  <div class="dot"></div>
-                </div>
-                <span id="current-end">0:30</span>
-              </div>
-          
-              <div class="icon">
-                <i class="fa-solid shuffle fa-music" data-mode="next"></i>
-                <i class="fa-solid fa-backward-step" id="back"></i>
-                <i class="fa-solid fa-play" id="masterPlay"></i>
-                <i class="fa-solid fa-forward-step" id="next"></i>
-              </div>
-
-              <div class="vol">
-                <i class="fa-solid fa-volume-high" id="vol-icon"></i>
-                <input type="range" min="0" max="100" id="vol">
-                <div class="dot" id="vol-dot"></div>
-                <div class="vol-bar"></div>
-              </div>
-
-            </footer>
-          </div>
+      <img src="anh/hieuthuhai.jpeg" class="w-12 h-12 rounded-full object-cover hover:scale-105 transition-transform duration-200" />
+      <img src="anh/đuôngmic.jpeg" class="w-12 h-12 rounded-full object-cover hover:scale-105 transition-transform duration-200" />
+      <img src="anh/Sơn_Tùng_M-TP_-_Chúng_ta_của_tương_lai.png" class="w-12 h-12 rounded-full object-cover hover:scale-105 transition-transform duration-200" />
+      <img src="anh/ab67616d00001e028863bc11d2aa12b54f5aeb36.jpeg" class="w-12 h-12 rounded-full object-cover hover:scale-105 transition-transform duration-200" />
     </div>
+  </div>
 </body>
 </html>
